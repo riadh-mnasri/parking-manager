@@ -2,18 +2,18 @@ package com.wehightech.parking.model;
 
 public class Parking {
 
-    private Long id;
+    private String id;
     private String name;
     private int availablePlaceCount;
     private int totalPlaceCount;
     private String status;
     private String updateTime;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

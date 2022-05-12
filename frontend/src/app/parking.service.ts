@@ -17,8 +17,9 @@ export class ParkingService {
   }
 
   getParking(id: number) : Observable<ParkingInfo> {
+    console.log("Parking id:", id)
     return this.httpClient.get<ParkingInfo[]>(environment.apiUrl + '/parkings').pipe(
-      map(parkings => parkings.find(parking => parking.id === id))
+      map(parkings => parkings.find(parking => parking.id == id))
     );
   }
 }
